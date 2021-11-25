@@ -1,14 +1,12 @@
-  <head>
-    {% extends 'base.html' %} 
-    <title>
+  {% extends 'base.html' %} 
+    {% block title %}
       Это главная страница проекта Yatube
-    </title>
+    {% endblock title%}
   </head>
   <body>
     <main>
       <!-- класс py-5 создает отступы сверху и снизу блока -->
       <div class="container py-5">
-       
         {% block content %}
           <h1>Последние обновления на сайте</h1>
         <article>
